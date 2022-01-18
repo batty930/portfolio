@@ -1,0 +1,665 @@
+@charset "UTF-8";
+@media only screen and (max-width:767px) {
+    /* TOP */
+    .container{
+        max-width: 350px;
+    }
+    .TCli{
+        margin: 18px 40px 18px auto;
+    }
+    .TC img{
+        width: 90%;
+    }
+    .menu-list{
+        left: 8%;
+        font-size: 2.4rem;
+    }
+    .menu-item{
+        margin: 2% 0;
+    }
+    .MUfooter{
+        width: 40%;
+        left: 8%;
+        bottom: 7%;
+    }
+    /* GO to top */
+    #GoTop{
+        width: 12vw;
+    }
+    /* 共用BtnA */
+    .BtnP{
+        font-size: 2rem;
+    }
+    /* HOME */
+    .HTP{
+        width: 100%;
+        top: 18%;
+        left: 4%;
+    }
+    .HTp1{
+        height: 70px;
+        margin-bottom: 2rem;
+    }
+    .HTp2{
+        height: 160px;
+        margin-left: 0;
+    }
+    h1, h2{
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+    h2{
+        white-space:pre-wrap;
+    }
+    .banner{
+        width: 40%;
+        right: 6%;
+        bottom: 4%;
+    }
+    .Lbtna{
+        left: 5%;
+        bottom: 4vh;
+    }
+    @keyframes rwdHbtnaFADEIN{
+        from{ opacity: 0;bottom: -4vh; }
+        to{ opacity: 1;bottom: 4vh; }
+    }
+    .Hbtna{
+        bottom: -4vh;
+        opacity: 0;
+        animation: rwdHbtnaFADEIN 1s forwards;
+        animation-delay: 1s;
+    }
+    /* 共用bg */
+    .AbgTop{
+        top: -200px;
+    }
+    @keyframes RWDfadeinANDup{
+        from{ opacity: 0;top: 0px; }
+        to{ opacity: 1;top: -200px; }
+    }
+    .AbgTop{
+        opacity: 0;
+        animation: RWDfadeinANDup .5s forwards;
+        animation-delay: 1.5s;
+    }
+    /* ABOUT */
+    #ABOUT{
+        height: auto;
+    }
+    .Acontents, .Scontents{
+        display: block;
+    }
+    .Acontents{
+        max-height: none;
+    }
+    .A1, .A2{
+        width: 100vw;
+        height: auto;
+    }
+    .A1{
+        padding: 80px 0 0 0;
+    }
+    .A2{
+        padding: 0 0 80px 0;
+    }
+    .photo, .introduction, .ep1, .ep2_rwd, .ep3_rwd, .ep4_rwd{
+        max-width: 377px;
+        max-height: 377px;
+        position: static;
+    }
+    .photo{
+        width: 70vw;
+        height: 70vw;
+    }
+    .introduction{
+        width: 95vw;
+        height: 95vw;
+        margin: 0 auto;
+    }
+    .Ifront_rwd{
+        border: double white 3px;
+    }
+    .Ifront_rwd, .E1front_rwd, .ep2_rwd, .ep3_rwd, .ep4_rwd{
+        display: block;
+    }
+    .Ifront, .Iback, .E1front, .E1back, .E2back{
+        display: none;
+    }
+    .ep1, .ep2_rwd, .ep3_rwd, .ep4_rwd{
+        width: 90vw;
+        height: 90vw;
+    }
+    .ep1{
+        margin: 40px auto 10px 0;
+    }
+    .ep2{
+        display: none;
+    }
+    .E2front_rwd p, .E3front_rwd p, .E4front_rwd p{
+        width: 228px;
+    }
+    .ep2_rwd{
+        margin: 0 0 10px auto;
+    }
+    .ep3_rwd{
+        margin: 0 auto 10px 0;
+    }
+    .ep4_rwd{
+        margin: 0 0 60px auto;
+    }
+    .Ifront_rwd, .E1front_rwd, .E2front_rwd, .E3front_rwd, .E4front_rwd{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .Iback_rwd, .E1back_rwd, .E2back_rwd, .E3back_rwd, .E4back_rwd{
+        display: block;
+    }
+    .Rbtna{
+        right: 5%;
+        bottom: 4vh;
+    }
+    /* SKILL */
+    #SKILL{
+        height: 100%;
+    }
+    .Scontents{
+        display: none;
+    }
+    .Scontents_rwd{
+        display: block;
+        position: relative;
+        height: 100%;
+        padding: 90px 0 0 0;
+        filter:drop-shadow(5px 5px 7px rgba(0, 0, 0, .2));
+    }
+    .S1rwd, .S2rwd{
+        position: relative;
+    }
+    .S2rwd{
+        padding: 0 0 30% 0;
+    }
+    .S1Trwd{
+        position: relative;
+        width: 100%;
+        height: 32px;
+        margin: 10% auto 12%;
+        display: flex;
+        justify-content: center;
+    }
+    .S1TPrwd{
+        position: relative;
+        width: 135px;
+        color: black;
+        font-family: 'Noto Sans TC', sans-serif;
+        font-weight: 500;
+        font-size: 2.3rem;
+        line-height: 2rem;
+        text-align: center;
+        letter-spacing: 1.8rem;
+    }
+    .STPWrwd{
+        position: absolute;
+        color: white;
+        left: 2%;
+        top: 2%;
+    }
+    .STPBrwd{
+        position: absolute;
+    }
+    .S1Crwd{
+        position: relative;
+        /* padding: 45px 0 0 0; */
+    }
+    .S1Ccrwd{
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10%;
+    }
+    .SbgRWD{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        clip-path: polygon(5% 10%, 95% 10%, 95% 90%, 5% 90%);
+        background-color: white;
+    }
+    .S1Cprwd{
+        position: absolute;
+        width: 80%;
+        min-width: 250px;
+        max-width: 400px;
+        height: 80px;
+        display: flex;
+        background-color: white;
+        border-radius: 0 10px 10px 0;
+    }
+    .S1CPitemRWD{
+        display: flex;
+        align-items: center;
+    }
+    .ICONIMGrwd{
+        position: relative;
+        margin: 0 5% ;
+    }
+    .FATICONrwd{
+        margin: 0 8px 0 8px;
+    }
+    .ICONIMGrwd img{
+        width: 45px;
+    }
+    .SCPrwd{
+        width: 180px;
+        color: black;
+        font-family: 'Roboto', 'Noto Sans TC', sans-serif;
+        font-weight: 400;
+        font-size: 2rem;
+        letter-spacing: .2rem;
+    }
+    .LWORDrwd{
+        font-size: 1.6rem;
+        letter-spacing: .1rem;
+    }
+    .LVICONrwd{
+        width: 100%;
+        height: 60px;
+        position: absolute;
+        display: flex;
+        align-items: flex-end;
+        align-self: flex-end;
+    }
+    .LVICONrwd p{
+        font-weight: 400;
+        font-size: 1.2rem;
+        letter-spacing: .1rem;
+        position: absolute;
+        right: 20%;
+        align-self: flex-start;
+    }
+    .GOODICONrwd, .GOODICON2rwd, .OKICONrwd{
+        position: absolute;
+    }
+    .GOODICONrwd{
+        width: 12%;
+        right: 8%;
+        align-self: flex-end;
+    }
+    .GOODICON2rwd{
+        width: 12%;
+        right: 21%;
+    }
+    .OKICONrwd{
+        width: 12%;
+        right: 9%;
+        align-self: flex-end;
+    }
+    /* WORK */
+    .w1, .w2, .w3, .w4, .w5{
+        flex-direction: column;
+    }
+    .work1A, .work2A, .work3A, .work4A, .work5A{
+        width: 100%;
+    }
+    .WTP{
+        font-size: 2.8rem;
+        width: 248px;
+        top: 45%;
+        left: 2%;
+        line-height: 3rem;
+        word-break: break-all;
+    }
+    .Wtpb{
+        left: 3px;
+        top: 3px;
+        padding: 0 4px;
+    }
+    .WTPp4{
+        white-space: normal;
+    }
+
+    .Wcp{
+        width: 100%;
+        margin: 80px 0;
+    }
+    .WcpcR, .WcpcL{
+        text-align: center;
+    }
+    .Wcpdate{
+        flex-direction: row;
+        justify-content: center;
+    }
+    .Wcpp3{
+        margin: 0 0 0 6px;
+    }
+    /* CONTACT */
+    #CONTACT{
+        height: auto;
+    }
+    .Ccontents{
+        height: auto;
+        padding: 58px 0 0 0;
+    }
+    .C1, .C2{
+        position: static;
+        display: flex;
+        justify-content: center;
+    }
+    .C1{
+        margin: 90px 0 0 0;
+    }
+    .C2{
+        margin: 165px 0 83px 0;
+    }
+    .c1UL{
+        display: none;
+    }
+    .C1c, .C2c{
+        flex-direction: column-reverse;
+    }
+    .C1c-icon, .C2c-icon{
+        justify-content: center;
+    }
+    .C1c-icon li, .C2c-icon li{
+        width: 25%;
+    }
+    .Cicon1{
+        margin-right: 24px;
+    }
+    .Cicon2{
+        margin-right: 30px;        
+    }
+    .Cicon3{
+        margin-right: 0px;
+    }
+    .Cicon4{
+        margin-left: 0px;
+    }
+    .Cicon5{
+        margin-left: 31px;
+    }
+
+    .CiconEX{
+        width: 90px;
+        margin: .2rem 0;
+        word-break: break-all;
+    }
+    .C1p, .C2p{
+        align-items: flex-start;
+    }
+    .C1p{
+        margin-left: 0;
+    }
+    .C2p{
+        margin-right: 0;
+    }
+    /* footer */
+    footer span{
+        width: 93%;
+    }
+    footer p{
+        text-align: left;
+        margin: 1.8rem 1.5rem;
+    }
+}
+@media only screen and (min-width:768px) {
+    /* TOP */
+    .TC{
+        margin: 0 0 0 5%;
+    }
+    .menu-list{
+        left: 10%;
+    }
+    .MUfooter{
+        left: 10%;
+    }
+    /* HOME */
+    .HTP{
+        left: 10%;
+    }
+    .banner{
+        width: 38%;
+        right: 8%;
+    }
+    /* 共用bg */
+    .SbgTop, .WbgTop, .CbgTop{
+        top: -135px;
+    }
+    /* ABOUT */
+    .AbgTop{
+        top: -135px;
+        animation: RWD768fadeinANDup .5s forwards;
+        animation-delay: 1.5s;
+    }
+    @keyframes RWD768fadeinANDup{
+        from{ opacity: 0;top: 0px; }
+        to{ opacity: 1;top: -135px; }
+    }
+    .photo{
+        top: 16%;
+        left: 22%;
+    }
+    .introduction{
+        top: 43%;
+        right: -19%;
+    }
+    .ep1{
+        top: 20%;
+        left: -3%;
+    }
+    .ep2{
+        top: 58%;
+        right: -11%;
+    }
+    /* SKILL */
+    .Scontents{
+        max-height: none;
+    }
+    .S1C{
+        top: 15%;
+    }
+    .S2C{
+        top: 65%;
+    }
+    .S1c1, .S1c2, .S1c3, .S2c1, .S2c2{
+        flex-direction: column;
+    }
+    .css{
+        margin: 5% 0 0 0;
+    }
+    .illustrator{
+        margin: 7% 0 0 0;
+    }
+    .english, .nihongo, .scooter{
+        justify-content: flex-end;
+    }
+    .nihongo{
+        margin: 5% 0 0 0;
+    }
+    .scooter{
+        margin: 5% 0 0 0;
+    }
+    .SCP{
+        width: inherit;
+    }
+    .s1c1IMG{
+        top: -45%;
+    }
+    .s1c2IMG{
+        top: -49%;
+    }
+    .s1c1UL{
+        top: 25px;
+    }
+    .s1c2UL{
+        top: 25px;
+    }
+    /* WORK */
+    .Wcontents{
+        margin: 0 0 20% 0;
+    }
+    .WTP{
+        top: 5%;
+        width: 39%;
+        font-size: 3.5rem;
+        line-height: 3rem;
+        word-break: break-all;
+    }
+    .Wtpb{
+        left: 4px;
+        padding: 0 5px;
+    }
+    .WTPp2{
+        right: 33%;
+    }
+    .WTPp4{
+        right: 40%;
+        white-space: normal;
+    }
+    /* CONTACT */
+    .C1c-icon li, .C2c-icon li{
+        width: 95px;
+    }
+    .Cicon1, .Cicon3{
+        margin-right: 45px;
+    }
+    .Cicon2{
+        margin-right: 61px;
+    }
+    .Cicon4{
+        margin-left: 38px;
+    }
+
+
+@media only screen and (min-width:992px) {
+    /* TOP */
+    .TC{
+        margin: 0 0 0 2%;
+    }
+    .menu-list{
+        left: 20%;
+    }
+    .MUfooter{
+        width: 30%;
+        left: 20%;
+    }
+    /* HOME */
+    .HTP{
+        top: 18%;
+        left: 15%;
+    }
+    .banner{
+        width: 27%;
+        right: 20%;
+    }
+    /* 共用bg */
+    .AbgTop{
+        top: -63px;
+        animation: fadeinANDup .5s forwards;
+        animation-delay: 1.5s;
+    }
+    .SbgTop, .WbgTop, .CbgTop{
+        top: -63px;
+    }
+    /* ABOUT */
+    .photo{
+        top: 25%;
+        left: 3%;
+    }
+    .introduction{
+        top: 62%;
+        right: -6%;
+    }
+    .ep1{
+        top: 10%;
+        left: -31%;
+    }
+    .ep2{
+        top: 46%;
+        right: 2%;
+    }
+    /* SKILL */
+    .Scontents{
+        max-height: 700px;
+    }
+    .S1C{
+        top: 20%;
+    }
+    .S2C{
+        top: 70%;
+    }
+    .S1c1, .S1c2, .S1c3, .S2c1, .S2c2{
+        flex-direction: row;
+    }
+    .css{
+        margin: 0 0 0 50px;
+    }
+    .illustrator{
+        margin: 0 0 0 50px;
+    }
+    .english, .nihongo, .scooter{
+        justify-content: flex-start;
+    }
+    .nihongo{
+        margin: 0 0 0 170px;
+    }
+    .scooter{
+        margin: 0 0 0 80px;
+    }
+    .SCP{
+        width: 100%;
+    }
+    .s1c1IMG{
+        top: 0;
+    }
+    .s1c2IMG{
+        top: -18%;
+    }
+    .s1c1UL{
+        top: 42px;
+    }
+    .s1c2UL{
+        top: 30px;
+    }
+    /* WORK */
+    .Wcontents{
+        margin: auto;
+    }
+    .WTP{
+        top: 15%;
+        width: 0;
+        font-size: 5rem;
+        line-height: normal;
+        word-break: normal;
+    }
+    .Wtpb{
+        left: 0px;
+        padding: 0 10px;
+    }
+    .WTPp2{
+        right: 67%;
+    }
+    .WTPp4{
+        right: 89%;
+        white-space:nowrap;
+    }
+    /* CONTACT */
+    .C1c-icon li, .C2c-icon li{
+        width: 109px;
+    }
+    .Cicon1, .Cicon3{
+        margin-right: 48px;
+    }
+    .Cicon2{
+        margin-right: 60px;
+    }
+    .Cicon4{
+        margin-left: 47px;
+    }
+
+}
+}
