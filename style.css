@@ -594,8 +594,8 @@ h2 {
   right: -6%;
 }
 .Ifront {
-  width: 100%;
-  height: 100%;
+  width: 150%;
+  height: 150%;
   border: double white 7px;
   display: flex;
   justify-content: center;
