@@ -1,782 +1,1123 @@
 <!DOCTYPE html>
 <html lang="zh-hant-tw">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>廖家歆的個人履歷網站</title>
     <!-- 頁籤logo -->
-    <link rel="icon" href="https://i.imgur.com/XQvovs4.png">
+    <link rel="icon" href="images/XQvovs4.png" />
     <!-- fancybox css -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"
+    />
     <!-- AOS css -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- 自訂css -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="rwd.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="rwd.css" />
+  </head>
+  <body>
     <header id="top">
-        <div class="container">
-            <nav class="TCnav">
-                <ul class="TC">
-                    <li class="TCli">
-                        <a class="iconLINK" href="#CONTACT"><img src="images/T_phone.svg" alt="連絡電話"></a>
-                    </li>
-                    <li class="TCli">
-                        <a href="https://line.me/ti/p/exwiAIGUFK" target="_blank"><img src="images/T_line.svg" alt="外連line QRcode"></a>
-                    </li>
-                    <li class="TCli">
-                        <a class="iconLINK" href="#CONTACT"><img src="images/T_mail.svg" alt="聯絡信箱"></a>
-                    </li>
-                </ul>
-            </nav>
-            <!-- menu -->
-            <input id="nav-toggle" type="checkbox">
-            <label for="nav-toggle" class="ham">
-                <div class="ham-origin">
-                    <div class="ham-bar ham-bar--top"></div>
-                    <div class="ham-bar ham-bar--middle"></div>
-                    <div class="ham-bar ham-bar--bottom"></div>
+      <div class="container">
+        <nav class="TCnav">
+          <ul class="TC">
+            <li class="TCli">
+              <a class="iconLINK" href="#CONTACT"
+                ><img src="images/T_phone.svg" alt="連絡電話"
+              /></a>
+            </li>
+            <li class="TCli">
+              <a href="https://line.me/ti/p/exwiAIGUFK" target="_blank"
+                ><img src="images/T_line.svg" alt="外連line QRcode"
+              /></a>
+            </li>
+            <li class="TCli">
+              <a class="iconLINK" href="#CONTACT"
+                ><img src="images/T_mail.svg" alt="聯絡信箱"
+              /></a>
+            </li>
+          </ul>
+        </nav>
+        <!-- menu -->
+        <input id="nav-toggle" type="checkbox" />
+        <label for="nav-toggle" class="ham">
+          <div class="ham-origin">
+            <div class="ham-bar ham-bar--top"></div>
+            <div class="ham-bar ham-bar--middle"></div>
+            <div class="ham-bar ham-bar--bottom"></div>
+          </div>
+        </label>
+        <nav class="menu">
+          <ul class="menu-list">
+            <li class="menu-item">
+              <a class="menuLINK" href="#ABOUT">
+                <span>ABOUT ME</span>
+                <div class="MUstrikethrough">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
                 </div>
-            </label>
-            <nav class="menu">
-                <ul class="menu-list">
-                    <li class="menu-item">
-                        <a class="menuLINK" href="#ABOUT">
-                            <span>ABOUT ME</span>
-                            <div class="MUstrikethrough">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="menu-item">
-                        <a class="menuLINK" href="#SKILL">
-                            <span>MY SKILL</span>
-                            <div class="MUstrikethrough">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="menu-item">
-                        <a class="menuLINK" href="#WORK">
-                            <span>MY WORK</span>
-                            <div class="MUstrikethrough">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="menu-item">
-                        <a class="menuLINK" href="#CONTACT">
-                            <span>MY CONTACT</span>
-                            <div class="MUstrikethrough">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-                        </a>
-                        <div class="MENUc">
-                            <div>
-                                <a class="iconLINK" href="#CONTACT"><img src="images/M_phone.svg" alt="連絡電話"></a>
-                            </div>
-                            <div>
-                                <a href="https://line.me/ti/p/exwiAIGUFK" target="_blank"><img src="images/M_line.svg" alt="外連line QRcode"></a>
-                            </div>
-                            <div>
-                                <a class="iconLINK" href="#CONTACT"><img src="images/M_mail.svg" alt="聯絡信箱"></a>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-                <div class="MUfooter"><p>Hi!Welcome~~~</p></div>
-                <div class="banner">
-                    <a class="iconLINK" href="#HOME"><img src="https://i.imgur.com/aKXVMFf.png" alt="banner"></a></div>
-            </nav>
-        </div>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a class="menuLINK" href="#SKILL">
+                <span>MY SKILL</span>
+                <div class="MUstrikethrough">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a class="menuLINK" href="#WORK">
+                <span>MY WORK</span>
+                <div class="MUstrikethrough">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a class="menuLINK" href="#CONTACT">
+                <span>MY CONTACT</span>
+                <div class="MUstrikethrough">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </a>
+              <div class="MENUc">
+                <div>
+                  <a class="iconLINK" href="#CONTACT"
+                    ><img src="images/M_phone.svg" alt="連絡電話"
+                  /></a>
+                </div>
+                <div>
+                  <a href="https://line.me/ti/p/exwiAIGUFK" target="_blank"
+                    ><img src="images/M_line.svg" alt="外連line QRcode"
+                  /></a>
+                </div>
+                <div>
+                  <a class="iconLINK" href="#CONTACT"
+                    ><img src="images/M_mail.svg" alt="聯絡信箱"
+                  /></a>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="MUfooter"><p>Hi!Welcome~~~</p></div>
+          <div class="banner">
+            <a class="iconLINK" href="#HOME"
+              ><img src="images/aKXVMFf.png" alt="banner"
+            /></a>
+          </div>
+        </nav>
+      </div>
     </header>
     <main>
-        <section id="HOME">
-            <div class="HTP">
-                <div class="HTp1">
-                    <span class="block1"></span>
-                    <h1>I'm Chaminade</h1>
-                </div>
-                <div class="HTp2">
-                    <span class="block2"></span>
-                    <h2>Nice to</h2>
-                    <h2>meet you!</h2>
-                </div>
+      <section id="HOME">
+        <div class="HTP">
+          <div class="HTp1">
+            <span class="block1"></span>
+            <h1>I'm Chaminade</h1>
+          </div>
+          <div class="HTp2">
+            <span class="block2"></span>
+            <h2>Nice to</h2>
+            <h2>meet you!</h2>
+          </div>
+        </div>
+        <div class="banner">
+          <img src="images/aKXVMFf.png" alt="banner" />
+        </div>
+        <div class="Lbtna BtnA Hbtna">
+          <a class="menuLINK" href="#ABOUT"></a>
+          <p class="BtnP WP">ABOUT ME</p>
+          <div class="strikethrough">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </section>
+      <section id="ABOUT">
+        <div class="Abg">
+          <div class="AbgTop"></div>
+        </div>
+        <div class="Acontents">
+          <div class="A1">
+            <div class="photo" data-aos="flip-right" data-aos-delay="200">
+              <div class="Pfront">
+                <img src="images/3LviQPf.jpg" alt="本人照片1" />
+              </div>
+              <div class="Pback">
+                <p class="Ap">
+                  ▶廖家歆<br />
+                  ▶2000/09/30<br />
+                  ▶桃園市桃園區<br />
+                  <span style="color: #ffcc00">興趣 ▶登山/繪畫/攝影</span>
+                </p>
+              </div>
             </div>
-            <div class="banner"><img src="https://i.imgur.com/aKXVMFf.png" alt="banner"></div>
-            <div class="Lbtna BtnA Hbtna">
-                <a class="menuLINK" href="#ABOUT"></a>
-                <p class="BtnP WP">ABOUT ME</p>
-                <div class="strikethrough">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
+            <div
+              class="introduction"
+              data-aos="flip-right"
+              data-aos-delay="200"
+            >
+              <div class="Ifront">
+                <p class="Ap">
+                  <span style="color: #ffcc00">工作經歷</span><br />
+                </p>
+                <p class="Asmallp">
+                  實習：<br />
+                  •桃園聯新國際醫院|助理工程師<br />
+                  •農業部林業及自然保育署新竹林區管理處東眼山國家森林遊樂區|環境教育實習生<br />
+                  •輔仁大學防護室|防護員實習<br /><br />
+                  工作：<br />
+                  •蜂巢運動行銷|課程助教<br />
+                  •Peloton|健身器材測試員<br />
+                  •米飛生醫|行政助理<br />
+                  •教育部資通安全人才培育計畫：專任助理<br />
+                </p>
+              </div>
+              <div class="Ifront_rwd">
+                <p class="Ap">
+                  <span style="color: #ffcc00">工作實習</span><br />
+                </p>
+                <p class="Asmallp">
+                  實習：<br />
+                  •桃園聯新國際醫院|助理工程師<br />
+                  •東眼山國家森林遊樂區|環境教育實習生<br />
+                  •輔仁大學防護室|防護員實習<br />
+                  <br />
+                  工作：<br />
+                  •蜂巢運動行銷|課程助教<br />
+                  •Peloton|健身器材測試員<br />
+                  •米飛生醫|行政助理<br />
+                  •教育部資通安全人才培育計畫：專任助理<br />
+                </p>
+              </div>
+              <div class="Iback">
+                <img src="images/Kns49rB.jpg" alt="戒茂斯上嘉明湖足球場照" />
+              </div>
+              <div class="Iback_rwd">
+                <img src="images/azsWuFs.jpg" alt="志佳陽松針營地" />
+              </div>
             </div>
-        </section>
-        <section id="ABOUT">
-            <div class="Abg">
-                <div class="AbgTop"></div>
+          </div>
+          <div class="A2">
+            <div class="ep1" data-aos="flip-right" data-aos-delay="400">
+              <div class="E1front">
+                <p class="Ap">
+                  <span style="color: #ffcc00">2015/08 ~ 2018/06</span><br />
+                  就讀內壢高中<br />
+                </p>
+                <p class="Asmallp">
+                  •大手拉小手同儕輔導員<br />
+                  •糾察儀隊<br />
+                  •春暉社公關&文宣<br />
+                  •圖書館志工
+                </p>
+                <p class="Ap">
+                  <span style="color: #ffcc00">2018/08 ~ 2019/06</span><br />
+                  就讀輔仁大學應用美術學系<br />
+                </p>
+                <p class="Asmallp">
+                  •桃青志工、農學市集志工<br />
+                  •繪本服務學習社美宣<br />
+                </p>
+                <p class="Ap">
+                  <span style="color: #ffcc00">2019/08 ~ 2024/06</span><br />
+                  主修：醫學資訊與創新應用學士學位學程<br />
+                  輔系：生命科學<br />
+                  學程：運動防護學程、醫學工程學程<br />
+                </p>
+                <p class="Asmallp">
+                  •登山社副社長&嚮導<br />
+                  •蒙古國際志工：美宣<br />
+                </p>
+              </div>
+              <div class="E1front_rwd">
+                <p class="Ap">
+                  <span style="color: #ffcc00">2015/08 ~ 2018/06</span><br />
+                  就讀內壢高中<br />
+                </p>
+                <p class="Ap">
+                  <span style="color: #ffcc00">2018/08 ~ 2019/06</span><br />
+                  就讀輔仁大學應用美術學系<br />
+                </p>
+                <p class="Ap">
+                  <span style="color: #ffcc00">2019/08 ~ 2024/06</span><br />
+                  醫學資訊與創新應用學士學位學程<br />
+                  輔系：生命科學<br />
+                  學程：運動防護學程、醫學工程學程<br />
+                </p>
+              </div>
+              <div class="E1back">
+                <img src="images/TOfbND8.jpg" alt="本人照片3" />
+              </div>
+              <div class="E1back_rwd">
+                <img src="images/tDbXVg2.jpg" alt="本人照片4" />
+              </div>
             </div>
-            <div class="Acontents">
-                <div class="A1">
-                    <div class="photo" data-aos="flip-right" data-aos-delay="200">
-                        <div class="Pfront"><img src="https://i.imgur.com/3LviQPf.jpg" alt="本人照片1"></div>
-                        <div class="Pback"><p class="Ap">
-                                ▶廖家歆<br>
-                                ▶2000/09/30<br>
-                                ▶桃園市桃園區<br>
-                                <span style="color:#FFCC00;">興趣 ▶登山/繪畫/攝影</span>
-                            </p></div>
-                    </div>
-                    <div class="introduction" data-aos="flip-right" data-aos-delay="200">
-                        <div class="Ifront">
-                            <p class="Ap">
-                                <span style="color:#FFCC00;">工作經歷</span><br>
-                            </p>
-                            <p class="Asmallp">
-                                實習：<br>
-                                •桃園聯新國際醫院|助理工程師<br>
-                                •農業部林業及自然保育署新竹林區管理處東眼山國家森林遊樂區|環境教育實習生<br>
-                                •輔仁大學防護室|防護員實習<br><br>
-                                工作：<br>
-                                •蜂巢運動行銷|課程助教<br>
-                                •Peloton|健身器材測試員<br>
-                                •米飛生醫|行政助理<br>
-                                •教育部資通安全人才培育計畫：專任助理<br>
-                            </p>
-                        </div>
-                        <div class="Ifront_rwd">
-                            <p class="Ap">
-                                <span style="color:#FFCC00;">工作實習</span><br>              
-                            </p>
-                            <p class="Asmallp">
-                                實習：<br>
-                                •桃園聯新國際醫院|助理工程師<br>
-                                •東眼山國家森林遊樂區|環境教育實習生<br>
-                                •輔仁大學防護室|防護員實習<br>
-                                <br>
-                                工作：<br>
-                                •蜂巢運動行銷|課程助教<br>
-                                •Peloton|健身器材測試員<br>
-                                •米飛生醫|行政助理<br>
-                                •教育部資通安全人才培育計畫：專任助理<br>
-                            </p>
-                        </div>
-                        <div class="Iback"><img src="https://i.imgur.com/Kns49rB.jpg" alt="戒茂斯上嘉明湖足球場照"></div>
-                        <div class="Iback_rwd"><img src="https://i.imgur.com/azsWuFs.jpg" alt="志佳陽松針營地"></div>
-                    </div>
-                </div>
-                <div class="A2">
-                    <div class="ep1" data-aos="flip-right" data-aos-delay="400">
-                        <div class="E1front">
-                            <p class="Ap">
-                                <span style="color:#FFCC00;">2015/08 ~ 2018/06</span><br>
-                                就讀內壢高中<br>
-                            </p>
-                            <p class="Asmallp">
-                                •大手拉小手同儕輔導員<br>
-                                •糾察儀隊<br>
-                                •春暉社公關&文宣<br>
-                                •圖書館志工
-                            </p>
-                            <p class="Ap">
-                                <span style="color:#FFCC00;">2018/08 ~ 2019/06</span><br>
-                                就讀輔仁大學應用美術學系<br>
-                            </p>
-                            <p class="Asmallp">
-                                •桃青志工、農學市集志工<br>
-                                •繪本服務學習社美宣<br>
-                            </p>
-                            <p class="Ap">
-                                <span style="color:#FFCC00;">2019/08 ~ 2024/06</span><br>
-                                主修：醫學資訊與創新應用學士學位學程<br>
-                                輔系：生命科學<br>
-                                學程：運動防護學程、醫學工程學程<br>
-                            </p>
-                            <p class="Asmallp">
-                                •登山社副社長&嚮導<br>
-                                •蒙古國際志工：美宣<br>
-                            </p>
-                        </div>
-                        <div class="E1front_rwd">
-                            <p class="Ap">
-                                <span style="color:#FFCC00;">2015/08 ~ 2018/06</span><br>
-                                就讀內壢高中<br>
-                            </p>
-                            <p class="Ap">
-                                <span style="color:#FFCC00;">2018/08 ~ 2019/06</span><br>
-                                就讀輔仁大學應用美術學系<br>
-                            </p>
-                            <p class="Ap">
-                                <span style="color:#FFCC00;">2019/08 ~ 2024/06</span><br>
-                                醫學資訊與創新應用學士學位學程<br>
-                                輔系：生命科學<br>
-                                學程：運動防護學程、醫學工程學程<br>
-                            </p>
-                        </div>
-                        <div class="E1back"><img src="https://i.imgur.com/TOfbND8.jpg" alt="本人照片3"></div>
-                        <div class="E1back_rwd"><img src="https://i.imgur.com/tDbXVg2.jpg" alt="本人照片4"></div>
-                    </div>
-                </div>
-                
+          </div>
+        </div>
+        <div class="Rbtna BtnA">
+          <a class="menuLINK" href="#SKILL"></a>
+          <p class="BtnP BP">MY SKILL</p>
+          <div class="strikethrough">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </section>
+      <section id="SKILL">
+        <div class="SbgTop"></div>
+        <div class="Scontents">
+          <div class="S1">
+            <div class="S1bg"></div>
+            <div class="STP STPp1">
+              <div class="Stpw"><p>專業</p></div>
+              <div class="S1tp"><p>專業</p></div>
             </div>
-            <div class="Rbtna BtnA">
-                <a class="menuLINK" href="#SKILL"></a>
-                <p class="BtnP BP">MY SKILL</p>
-                <div class="strikethrough">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </div>
-        </section>
-        <section id="SKILL">
-            <div class="SbgTop"></div>
-            <div class="Scontents">
-                <div class="S1">
-                    <div class="S1bg"></div>
-                    <div class="STP STPp1">
-                        <div class="Stpw"><p>專業</p></div>
-                        <div class="S1tp"><p>專業</p></div>
+            <div class="S1C">
+              <div class="S1c1">
+                <div class="html" data-aos="fade-up" data-aos-delay="200">
+                  <div class="ICONimg">
+                    <img src="images/U5L9tfb.png" alt="HTML icon" />
+                  </div>
+                  <div class="SCP">
+                    <div class="Pblock">
+                      <p>HTML</p>
                     </div>
-                    <div class="S1C">
-                        <div class="S1c1">
-                            <div class="html" data-aos="fade-up" data-aos-delay="200">
-                                <div class="ICONimg"><img src="https://i.imgur.com/U5L9tfb.png" alt="HTML icon"></div>
-                                <div class="SCP">
-                                    <div class="Pblock">
-                                        <p>HTML</p>
-                                    </div>
-                                    <div class="S1Chover">
-                                        <div class="underline s1c1UL">
-                                            <span></span>
-                                            <span></span>
-                                            <span></span>
-                                            <span></span>
-                                        </div>
-                                        <div class="hoverIMG s1c1IMG"><img src="https://i.imgur.com/Y0OBFm5.png" alt="nice"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="css" data-aos="fade-up" data-aos-delay="200">
-                                <div class="ICONimg"><img src="https://i.imgur.com/mbkwoPM.png" alt="CSS icon"></div>
-                                <div class="SCP">
-                                    <div class="Pblock">
-                                        <p>CSS</p>
-                                    </div>
-                                    <div class="S1Chover">
-                                        <div class="underline s1c1UL">
-                                            <span></span>
-                                            <span></span>
-                                            <span></span>
-                                            <span></span>
-                                        </div>
-                                        <div class="hoverIMG s1c1IMG"><img src="https://i.imgur.com/Y0OBFm5.png" alt="nice"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="S1c2">
-                            <div class="photoshop" data-aos="fade-up" data-aos-delay="200">
-                                <div class="ICONimg"><img src="https://i.imgur.com/uqEmCwq.png" alt="PHOTOSHOP icon"></div>
-                                <div class="SCP">
-                                    <div class="Pblock">
-                                        <p>PHOTOSHOP</p>
-                                    </div>
-                                    <div class="S1Chover">
-                                        <div class="underline s1c2UL">
-                                            <span></span>
-                                            <span></span>
-                                            <span></span>
-                                            <span></span>
-                                        </div>
-                                        <div class="hoverIMG s1c2IMG"><img src="https://i.imgur.com/Y0OBFm5.png" alt="nice"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="illustrator" data-aos="fade-up" data-aos-delay="100">
-                                <div class="ICONimg"><img src="https://i.imgur.com/UExSP9E.png" alt="ILLUSTRATOR icon"></div>
-                                <div class="SCP">
-                                    <div class="Pblock">
-                                        <p>ILLUSTRATOR</p>
-                                    </div>
-                                    <div class="S1Chover">
-                                        <div class="underline s1c2UL">
-                                            <span></span>
-                                            <span></span>
-                                            <span></span>
-                                            <span></span>
-                                        </div>
-                                        <div class="hoverIMG s1c2IMG"><img src="https://i.imgur.com/Y0OBFm5.png" alt="nice"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="S1c3">
-                            <div class="draw" data-aos="fade-up" data-aos-delay="200">
-                                <div class="ICONimg"><img src="https://i.imgur.com/XrWFHJC.png" alt="painting icon"></div>
-                                <div class="SCP">
-                                    <div class="Pblock">
-                                        <p>平面繪圖</p>
-                                    </div>
-                                    <div class="S1Chover">
-                                        <div class="underline s1c3UL">
-                                            <span></span>
-                                            <span></span>
-                                            <span></span>
-                                            <span></span>
-                                        </div>
-                                        <div class="hoverIMG s1c3IMG"><img src="https://i.imgur.com/Y0OBFm5.png" alt="nice"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="S2">
-                    <div class="S2bg"></div>
-                    <div class="STP STPp2">
-                        <div class="Stpw"><p>其他</p></div>
-                        <div class="S2tp"><p>其他</p></div>
-                    </div>
-                    <div class="S2C">
-                        <div class="S2c1">
-                            <div class="english" data-aos="fade-up" data-aos-delay="100">
-                                <div class="ICONimg"><img src="https://i.imgur.com/zAZo4Fs.png" alt="英文能力icon"></div>
-                                <div class="SCP">
-                                    <div class="Pblock">
-                                        <p>英文</p>
-                                    </div>
-                                    <div class="S2Chover stpLEFT">
-                                        <div class="underline s2c1UL">
-                                            <span></span>
-                                            <span></span>
-                                            <span></span>
-                                            <span></span>
-                                        </div>
-                                        <div class="SEP"><p>閱讀</p></div>
-                                        <div class="hoverIMG s2c1IMG"><img src="https://i.imgur.com/Y0OBFm5.png" alt="nice"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="S2c2">
-                            <div class="scooter" data-aos="fade-up" data-aos-delay="200">
-                                <div class="ICONimg"><img src="https://i.imgur.com/d8VmJas.png" alt="機車駕照icon"></div>
-                                <div class="SCP">
-                                    <div class="Pblock">
-                                        <p>普通重型機車駕照</p>
-                                    </div>
-                                    <div class="S2Chover stpLEFT">
-                                        <div class="underline s2c4UL">
-                                            <span></span>
-                                            <span></span>
-                                            <span></span>
-                                            <span></span>
-                                        </div>
-                                        <div class="hoverIMG s2c4IMG"><img src="https://i.imgur.com/Y0OBFm5.png" alt="nice"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="Scontents_rwd">
-                <div class="S1rwd">
-                    <div class="S1Trwd">
-                        <div class="S1TPrwd" data-aos="fade-in" data-aos-delay="100">
-                            <div class="STPWrwd"><p>專業</p></div>
-                            <div class="STPBrwd"><p>專業</p></div>
-                        </div>
-                    </div>
-                    <div class="S1Crwd">
-                        <div class="S1Ccrwd" data-aos="fade-up" data-aos-delay="100">
-                            <div class="S1Cprwd">
-                                <div class="S1CPitemRWD">
-                                    <div class="ICONIMGrwd"><img src="https://i.imgur.com/U5L9tfb.png" alt="HTML"></div>
-                                    <p class="SCPrwd">HTML</p>
-                                </div>
-                            </div>
-                            <div class="GOODICONrwd"><img src="https://i.imgur.com/Y0OBFm5.png" alt="nice"></div>
-                        </div>
-                        <div class="S1Ccrwd" data-aos="fade-up" data-aos-delay="100">
-                            <div class="S1Cprwd">
-                                <div class="S1CPitemRWD">
-                                    <div class="ICONIMGrwd"><img src="https://i.imgur.com/mbkwoPM.png" alt="CSS"></div>
-                                    <p class="SCPrwd">CSS</p>
-                                </div>
-                            </div>
-                            <div class="GOODICONrwd"><img src="https://i.imgur.com/Y0OBFm5.png" alt="nice"></div>
-                        </div>
-                        <div class="S1Ccrwd" data-aos="fade-up" data-aos-delay="100">
-                            <div class="S1Cprwd">
-                                <div class="S1CPitemRWD">
-                                    <div class="ICONIMGrwd"><img src="https://i.imgur.com/uqEmCwq.png" alt="PHOTOSHOP"></div>
-                                    <p class="SCPrwd LWORDrwd">PHOTOSHOP</p>
-                                </div>
-                            </div>
-                            <div class="GOODICONrwd"><img src="https://i.imgur.com/Y0OBFm5.png" alt="nice"></div>
-                        </div>
-                        <div class="S1Ccrwd" data-aos="fade-up" data-aos-delay="100">
-                            <div class="S1Cprwd">
-                                <div class="S1CPitemRWD">
-                                    <div class="ICONIMGrwd"><img src="https://i.imgur.com/UExSP9E.png" alt="ILLUSTRATOR"></div>
-                                    <p class="SCPrwd LWORDrwd">ILLUSTRATOR</p>
-                                </div>
-                            </div>
-                            <div class="GOODICONrwd"><img src="https://i.imgur.com/Y0OBFm5.png" alt="nice"></div>
-                        </div>
-                        <div class="S1Ccrwd" data-aos="fade-up" data-aos-delay="100">
-                            <div class="S1Cprwd">
-                                <div class="S1CPitemRWD">
-                                    <div class="ICONIMGrwd"><img src="https://i.imgur.com/XrWFHJC.png" alt="平面繪圖"></div>
-                                    <p class="SCPrwd">平面繪圖</p>
-                                </div>
-                            </div>
-                            <div class="LVICONrwd">
-                                <div class="GOODICON2rwd"><img src="https://i.imgur.com/Y0OBFm5.png" alt="nice"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="S2rwd">
-                    <div class="S1Trwd">
-                        <div class="S1TPrwd" data-aos="fade-in" data-aos-delay="100">
-                            <div class="STPWrwd"><p>其他</p></div>
-                            <div class="STPBrwd"><p>其他</p></div>
-                        </div>
-                    </div>
-                    <div class="S1Ccrwd" data-aos="fade-up" data-aos-delay="100">
-                        <div class="S1Cprwd">
-                            <div class="S1CPitemRWD">
-                                <div class="ICONIMGrwd"><img src="https://i.imgur.com/zAZo4Fs.png" alt="英文能力icon"></div>
-                                <p class="SCPrwd">英文</p>
-                            </div>
-                        </div>
-                        <div class="LVICONrwd">
-                            <p>閱讀</p>
-                            <div class="GOODICONrwd"><img src="https://i.imgur.com/Y0OBFm5.png" alt="nice"></div>
-                        </div>
-                    </div>
-                    <div class="S1Ccrwd" data-aos="fade-up" data-aos-delay="100">
-                        <div class="S1Cprwd">
-                            <div class="S1CPitemRWD">
-                                <div class="ICONIMGrwd"><img src="https://i.imgur.com/d8VmJas.png" alt="機車駕照icon"></div>
-                                <p class="SCPrwd LWORDrwd">普通重型機車駕照</p>
-                            </div>
-                        </div>
-                        <div class="OKICONrwd"><img src="https://i.imgur.com/Y0OBFm5.png" alt="nice"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="Lbtna BtnA">
-                <a class="menuLINK" href="#WORK"></a>
-                <p class="BtnP WP">MY WORK</p>
-                <div class="strikethrough">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </div>
-        </section>
-        <section id="WORK">
-            <div class="Wbg">
-                <div class="WbgTop"></div>
-            </div>
-            <div class="Wcontents">
-                <div class="w1">
-                    <a class="work1A" href="https://i.imgur.com/uJ3ot2r.png" data-aos="fade-in" data-aos-delay="100" data-fancybox="group1" data-caption="攝影作品">
-                        <div class="Wimg"><img src="https://i.imgur.com/uJ3ot2r.png" alt="作品預覽圖"></div>
-                        <div class="Wmask"></div>
-                    </a>
-                    <a data-fancybox="group1" href="https://i.imgur.com/3DnI64n.jpg" "></a>
-                    <a data-fancybox="group1" href="https://i.imgur.com/6XpBjeg.png" "></a>
-                    <a data-fancybox="group1" href="https://i.imgur.com/6zv1MOu.jpg" "></a>
-                    <a data-fancybox="group1" href="https://i.imgur.com/RxR1KzB.png" "></a>
-                    <a data-fancybox="group1" href="https://i.imgur.com/rrh6BPz.png" "></a>
-                    <a data-fancybox="group1" href="https://i.imgur.com/azUjdTD.jpg"  data-caption="更多攝影作品可到IG觀看"></a>
-                    <div class="WTP WTPp1" data-aos="fade-up" data-aos-delay="100">
-                        <div class="Wtpb">
-                            <p>PHOTOT</p>
-                        </div>
-                        <div class="Wtpw">
-                            <p>PHOTO</p>
-                        </div>
-                    </div>
-                    <div class="Wcp">
-                        <div class="Wcpc WcpcR" data-aos="fade-up" data-aos-delay="300">
-                            <p class="Wcpp1">攝影<br>個人攝影作品</p>
-                            <div class="Wcpdate">
-                                
-                                <a  class="Wcpp2" href="https://www.instagram.com/ljx930/" target="_blank">前往觀看</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="w2">
-                    <a class="work2A" href="images/youtube.jpg" data-aos="fade-in" data-aos-delay="100" data-fancybox="gallery" data-caption="生活紀錄">
-                        <div class="Wimg"><img src="images/youtube.jpg" alt="預覽圖"></div>
-                        <div class="Wmask"></div>
-                    </a>
-                    <div class="WTP WTPp2" data-aos="fade-up" data-aos-delay="100">
-                        <div class="Wtpb">
-                            <p>YouTube</p>
-                        </div>
-                        <div class="Wtpw">
-                            <p>YouTube</p>
-                        </div>
-                    </div>
-                    <div class="Wcp">
-                        <div class="Wcpc WcpcL" data-aos="fade-up" data-aos-delay="300">
-                            <p class="Wcpp1"> YouTube <br> 生活紀錄 </p>
-                            <a  class="Wcpp2" href="https://www.youtube.com/c/%E5%BB%96%E5%AE%B6%E6%AD%860930" target="_blank">前往觀看</a>
-                            
-                        </div>
-                    </div>
-                </div>
-                <div class="w3">
-                    <a class="work3A" href="images/fjumt.jpg" data-aos="fade-in" data-aos-delay="100" data-fancybox="group3" data-caption="活動設計">
-                        <div class="Wimg"><img src="images/fjumt.jpg" alt="預覽圖"></div>
-                        <div class="Wmask"></div>
-                    </a>
-                    <a data-fancybox="group3" href="images/fjumt.jpg" data-caption="登山社logo設計"></a>
-                    <a data-fancybox="group3" href="images/mongolia_logo.jpg" data-caption="蒙古志工logo設計"></a>
-                    <a data-fancybox="group3" href="images/pbsc.jpg" data-caption="繪本社logo設計1"></a>
-                    <a data-fancybox="group3" href="https://i.imgur.com/p1gyCEv.png" data-caption="繪本社logo設計2"></a>
-                    <a data-fancybox="group3" href="https://i.imgur.com/AOapTPo.png" data-caption="繪本社banner設計"></a>
-                    <a data-fancybox="group3" href="https://i.imgur.com/CaKSc6I.png" data-caption="繪本社營隊logo設計"></a>
-                    <a data-fancybox="group3" href="https://i.imgur.com/a6AaMZK.jpg" data-caption="繪本社傳單設計"></a>
-                    <a data-fancybox="group3" href="https://i.imgur.com/sqTH4ep.png" data-caption="農學市集傳單設計"></a>
-                    <a data-fancybox="group3" href="images/mongolia_post.jpg" data-caption="蒙古志工宣傳圖"></a>
-                    <a data-fancybox="group3" href="https://i.imgur.com/VAu0zmS.png" data-caption="閂山鈴鳴山宣傳圖"></a>
-                    <a data-fancybox="group3" href="https://i.imgur.com/Biu38ZH.jpg" data-caption="高島縱走宣傳圖"></a>
-                    <a data-fancybox="group3" href="https://i.imgur.com/lYwkQIR.jpg" data-caption="戒茂斯上嘉明湖宣傳圖"></a>
-                    <a data-fancybox="group3" href="https://i.imgur.com/Aj5078y.png" data-caption="登山裝備社課宣傳圖"></a>
-                    <a data-fancybox="group3" href="https://i.imgur.com/yGqf5bx.png" data-caption="登山醫療宣傳圖"></a>
-                    <a data-fancybox="group3" href="https://i.imgur.com/06VCt0M.jpg" data-caption="登山糧食宣傳圖"></a>
-                    <a data-fancybox="group3" href="images/mongolia_first.jpg" data-caption="蒙古志工社服設計"></a>
-                    <a data-fancybox="group3" href="images/dysnc.png" data-caption="東眼山環教團隊"></a>
-                    <a data-fancybox="group3" href="images/taiwan.png" data-caption="徒步環島掛布設計"></a>
-                    <div class="WTP WTPp3" data-aos="fade-up" data-aos-delay="100">
-                        <div class="Wtpb">
-                            <p>活動設計</p>
-                        </div>
-                        <div class="Wtpw">
-                            <p>活動設計</p>
-                        </div>
-                    </div>
-                    <div class="Wcp">
-                        <div class="Wcpc WcpcR" data-aos="fade-up" data-aos-delay="300">
-                            <p class="Wcpp1">活動設計圖</p>
-                            <p class="Wcpp2">點圖觀看</p>
-                            
-                        </div>
-                    </div>
-                </div>
-                <div class="w4">
-                    <a class="work4A" href="images/ICUNIS_view.png" data-aos="fade-in" data-aos-delay="100" data-fancybox="group4" data-caption="專題設計">
-                        <div class="Wimg"><img src="images/ICUNIS_view.png" alt="預覽圖"></div>
-                        <div class="Wmask"></div>
-                    </a>
-                    <a data-fancybox="group4" href="images/ICUNIS_view.png" data-caption="ICUNIS_UI設計"></a>
-                    <a data-fancybox="group4" href="images/ICUNIS_view2.png" data-caption="ICUNIS_UI設計"></a>
-                    <a data-fancybox="group4" href="images/project_31.jpgg" data-caption="大三專題-醫院評量系統"></a>
-                    <a data-fancybox="group4" href="images/project_net.jpg" data-caption="大三專題-醫院好評網"></a>
-                    <a data-fancybox="group4" href="images/project_APP.jpg" data-caption="期末裝置行動報告"></a>
-                    <a data-fancybox="group4" href="images/project_view.jpg" data-caption="大三專題-醫院評量系統_UI設計"></a>
-                    <a data-fancybox="group4" href="images/project_view.jpg" data-caption="大四實習-虛擬健保卡報到系統"></a>
-                    <a data-fancybox="group4" href="images/notonlyacouch.png" data-caption="輔大苗圃工作坊【宅運動x通用設計】"></a>
-                    <div class="WTP WTPp4" data-aos="fade-up" data-aos-delay="100">
-                        <div class="Wtpb">
-                            <p>專題設計</p>
-                        </div>
-                        <div class="Wtpw">
-                            <p>專題設計</p>
-                        </div>
-                    </div>
-                    <div class="Wcp">
-                        <div class="Wcpc WcpcL" data-aos="fade-up" data-aos-delay="300">
-                            <p class="Wcpp1">專題設計</p>
-                            <p class="Wcpp2">點圖觀看</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="w5">
-                    <a class="work5A" href="images/熊野古道(中邊路).jpg" data-aos="fade-in" data-aos-delay="100" data-fancybox="group5" data-caption="重要經歷">
-                        <div class="Wimg"><img src="images/徒步環島.jpg" alt="預覽圖"></div>
-                        <div class="Wmask"></div>
-                    </a>
-                    <a data-fancybox="group5" href="images/熊野古道(中邊路).jpg" data-caption="2023熊野古道(中邊路)-日本朝聖之路"></a>
-                    <a data-fancybox="group5" href="images/formosatrail40K .jpg" data-caption="2024Formosa Trail-40K"></a>
-                    <a data-fancybox="group5" href="images/2024蒙古團志工.jpg" data-caption="2024蒙古團志工"></a>
-                    <a data-fancybox="group5" href="images/ACT.jpg" data-caption="2025-ACT"></a>
-                    <a data-fancybox="group5" href="images/徒步環島.jpg" data-caption="2023徒步環島"></a>
-                    <a data-fancybox="group5" href="images/橘子遊戲由岸到頂潮你的冒險去-山海圳.jpg" data-caption="2022橘子遊戲由岸到頂潮你的冒險去-山海圳"></a>
-                    <a data-fancybox="group5" href="images/舉辦教育部資安人培計畫子4活動.jpg" data-caption="2024舉辦教育部資安人培計畫子4活動"></a>
-                    <a data-fancybox="group5" href="images/繪本社邀講師.jpg" data-caption="2021繪本社邀請TFT豆皮(鄒宗翰)講師"></a>
-                    <a data-fancybox="group5" href="images/2024Uniservitate大使.jpg" data-caption="2024Uniservitate大使"></a>
-                    <a data-fancybox="group5" href="images/2025世壯運選手合照.jpg" data-caption="2025世壯運選手要與我們合照"></a>
-                    <a data-fancybox="group5" href="images/2025世壯運田徑ATPT合照.jpg" data-caption="2025世壯運田徑AT/PT合照"></a>
-                    <a data-fancybox="group5" href="images/與東眼山環教師和護管員合照.jpg" data-caption="2022與東眼山環教師和護管員合照"></a>
-                    <a data-fancybox="group5" href="images/東眼山暑期營隊合照.jpg" data-caption="2022東眼山暑期營隊合照"></a>
-                    <a data-fancybox="group5" href="images/繪本社暑期營隊合照.jpg" data-caption="2020繪本社暑期營隊合照"></a>
-                    <a data-fancybox="group5" href="images/2022輔大山社嚮導幹部大聚會.jpg" data-caption="2022輔大山社嚮導幹部大聚會"></a>
-                    <a data-fancybox="group5" href="images/農學市集畢業合照.jpg" data-caption="農學市集畢業合照"></a>
-                    <a data-fancybox="group5" href="images/繪本社畢業合照.jpg" data-caption="繪本社畢業合照"></a>
-                    <a data-fancybox="group5" href="images/聯新醫院實習部門合照合照.jpg" data-caption="聯新醫院實習部門合照"></a>
-                    <a data-fancybox="group5" href="images/2023萬金石馬拉松.jpg" data-caption="2023第一次跑全馬-萬金石馬拉松"></a>
-                    <a data-fancybox="group5" href="images/2024田中馬拉松全馬.jpg" data-caption="2024田中馬拉松全馬"></a>
-                    <div class="WTP WTPp5" data-aos="fade-up" data-aos-delay="100">
-                        <div class="Wtpb">
-                            <p>重要經歷</p>
-                        </div>
-                        <div class="Wtpw">
-                            <p>重要經歷</p>
-                        </div>
-                    </div>
-                    <div class="Wcp">
-                        <div class="Wcpc WcpcR" data-aos="fade-up" data-aos-delay="300">
-                            <p class="Wcpp1">重要經歷照片</p>
-                            <p class="Wcpp2">點圖觀看</p>
-                            <div class="Wcpdate">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="RbtnRE">
-                <div class="Rbtna BtnA">
-                    <a class="menuLINK" href="#CONTACT"></a>
-                    <p class="BtnP BP">CONTACT ME</p>
-                    <div class="strikethrough">
+                    <div class="S1Chover">
+                      <div class="underline s1c1UL">
                         <span></span>
                         <span></span>
                         <span></span>
                         <span></span>
+                      </div>
+                      <div class="hoverIMG s1c1IMG">
+                        <img src="images/Y0OBFm5.png" alt="nice" />
+                      </div>
                     </div>
+                  </div>
                 </div>
+                <div class="css" data-aos="fade-up" data-aos-delay="200">
+                  <div class="ICONimg">
+                    <img src="images/mbkwoPM.png" alt="CSS icon" />
+                  </div>
+                  <div class="SCP">
+                    <div class="Pblock">
+                      <p>CSS</p>
+                    </div>
+                    <div class="S1Chover">
+                      <div class="underline s1c1UL">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                      <div class="hoverIMG s1c1IMG">
+                        <img src="images/Y0OBFm5.png" alt="nice" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="S1c2">
+                <div class="photoshop" data-aos="fade-up" data-aos-delay="200">
+                  <div class="ICONimg">
+                    <img src="images/uqEmCwq.png" alt="PHOTOSHOP icon" />
+                  </div>
+                  <div class="SCP">
+                    <div class="Pblock">
+                      <p>PHOTOSHOP</p>
+                    </div>
+                    <div class="S1Chover">
+                      <div class="underline s1c2UL">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                      <div class="hoverIMG s1c2IMG">
+                        <img src="images/Y0OBFm5.png" alt="nice" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="illustrator"
+                  data-aos="fade-up"
+                  data-aos-delay="100"
+                >
+                  <div class="ICONimg">
+                    <img src="images/UExSP9E.png" alt="ILLUSTRATOR icon" />
+                  </div>
+                  <div class="SCP">
+                    <div class="Pblock">
+                      <p>ILLUSTRATOR</p>
+                    </div>
+                    <div class="S1Chover">
+                      <div class="underline s1c2UL">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                      <div class="hoverIMG s1c2IMG">
+                        <img src="images/Y0OBFm5.png" alt="nice" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="S1c3">
+                <div class="draw" data-aos="fade-up" data-aos-delay="200">
+                  <div class="ICONimg">
+                    <img src="images/XrWFHJC.png" alt="painting icon" />
+                  </div>
+                  <div class="SCP">
+                    <div class="Pblock">
+                      <p>平面繪圖</p>
+                    </div>
+                    <div class="S1Chover">
+                      <div class="underline s1c3UL">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                      <div class="hoverIMG s1c3IMG">
+                        <img src="images/Y0OBFm5.png" alt="nice" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-        </section>
-        <section id="CONTACT">
-            <div class="CbgTop"></div>
-            <div class="Ccontents">
-                <div class="C1" data-aos="fade-right" data-aos-delay="100">
-                    <div class="underline c1UL">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <div class="C1c">
-                        <ul class="C1c-icon">
-                            <li class="Cicon1">
-                                <a title="連絡電話"><img src="images/C_phone.svg" alt="連絡電話"></a>
-                                <div class="CiconEX">
-                                    <p>▼<br>0902-290-930</p>
-                                </div>
-                            </li>
-                            <li class="Cicon2">
-                                <a href="https://line.me/ti/p/exwiAIGUFK" target="_blank" title="我的line QRcode"><img src="images/C_line.svg" alt="我的line QRcode"></a>
-                            </li>
-                            <li class="Cicon3">
-                                <a title="連絡信箱"><img src="images/C_mail.svg" alt="連絡信箱"></a>
-                                <div class="CiconEX">
-                                    <p>▼<br>batty890930@gmail.com</p>
-                                </div>
-                            </li>
-                        </ul>
-                        <div class="C1p"><p>CONTACT ME</p></div>
-                    </div>
-                </div>
-                <div class="C2" data-aos="fade-left" data-aos-delay="100">
-                    <div class="underline c1UL">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <div class="C2c">
-                        <ul class="C2c-icon">
-                            <li class="Cicon4">
-                                <a href="https://www.instagram.com/ljx930/" target="_blank" title="我的Instagram"><img src="images/C_ig.svg" alt="我的Instagram"></a>
-                            </li>
-                            <li class="Cicon5">
-                                <a href="https://www.facebook.com/liao930/" target="_blank" title="我的FB"><img src="images/C_fb.svg" alt="我的FB"></a>
-                            </li>
-                        </ul>
-                        <div class="C2p"><p>FOLLOW ME</p></div>
-                    </div>
-                </div>
+          </div>
+          <div class="S2">
+            <div class="S2bg"></div>
+            <div class="STP STPp2">
+              <div class="Stpw"><p>其他</p></div>
+              <div class="S2tp"><p>其他</p></div>
             </div>
-        </section>
-        <div id="GoTop"><a href="#"><img src="https://i.imgur.com/TdR4MqY.png" alt="go to top"></a></div>
+            <div class="S2C">
+              <div class="S2c1">
+                <div class="english" data-aos="fade-up" data-aos-delay="100">
+                  <div class="ICONimg">
+                    <img src="images/zAZo4Fs.png" alt="英文能力icon" />
+                  </div>
+                  <div class="SCP">
+                    <div class="Pblock">
+                      <p>英文</p>
+                    </div>
+                    <div class="S2Chover stpLEFT">
+                      <div class="underline s2c1UL">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                      <div class="SEP"><p>閱讀</p></div>
+                      <div class="hoverIMG s2c1IMG">
+                        <img src="images/Y0OBFm5.png" alt="nice" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="S2c2">
+                <div class="scooter" data-aos="fade-up" data-aos-delay="200">
+                  <div class="ICONimg">
+                    <img src="images/d8VmJas.png" alt="機車駕照icon" />
+                  </div>
+                  <div class="SCP">
+                    <div class="Pblock">
+                      <p>普通重型機車駕照</p>
+                    </div>
+                    <div class="S2Chover stpLEFT">
+                      <div class="underline s2c4UL">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                      <div class="hoverIMG s2c4IMG">
+                        <img src="images/Y0OBFm5.png" alt="nice" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="Scontents_rwd">
+          <div class="S1rwd">
+            <div class="S1Trwd">
+              <div class="S1TPrwd" data-aos="fade-in" data-aos-delay="100">
+                <div class="STPWrwd"><p>專業</p></div>
+                <div class="STPBrwd"><p>專業</p></div>
+              </div>
+            </div>
+            <div class="S1Crwd">
+              <div class="S1Ccrwd" data-aos="fade-up" data-aos-delay="100">
+                <div class="S1Cprwd">
+                  <div class="S1CPitemRWD">
+                    <div class="ICONIMGrwd">
+                      <img src="images/U5L9tfb.png" alt="HTML" />
+                    </div>
+                    <p class="SCPrwd">HTML</p>
+                  </div>
+                </div>
+                <div class="GOODICONrwd">
+                  <img src="images/Y0OBFm5.png" alt="nice" />
+                </div>
+              </div>
+              <div class="S1Ccrwd" data-aos="fade-up" data-aos-delay="100">
+                <div class="S1Cprwd">
+                  <div class="S1CPitemRWD">
+                    <div class="ICONIMGrwd">
+                      <img src="images/mbkwoPM.png" alt="CSS" />
+                    </div>
+                    <p class="SCPrwd">CSS</p>
+                  </div>
+                </div>
+                <div class="GOODICONrwd">
+                  <img src="images/Y0OBFm5.png" alt="nice" />
+                </div>
+              </div>
+              <div class="S1Ccrwd" data-aos="fade-up" data-aos-delay="100">
+                <div class="S1Cprwd">
+                  <div class="S1CPitemRWD">
+                    <div class="ICONIMGrwd">
+                      <img src="images/uqEmCwq.png" alt="PHOTOSHOP" />
+                    </div>
+                    <p class="SCPrwd LWORDrwd">PHOTOSHOP</p>
+                  </div>
+                </div>
+                <div class="GOODICONrwd">
+                  <img src="images/Y0OBFm5.png" alt="nice" />
+                </div>
+              </div>
+              <div class="S1Ccrwd" data-aos="fade-up" data-aos-delay="100">
+                <div class="S1Cprwd">
+                  <div class="S1CPitemRWD">
+                    <div class="ICONIMGrwd">
+                      <img src="images/UExSP9E.png" alt="ILLUSTRATOR" />
+                    </div>
+                    <p class="SCPrwd LWORDrwd">ILLUSTRATOR</p>
+                  </div>
+                </div>
+                <div class="GOODICONrwd">
+                  <img src="images/Y0OBFm5.png" alt="nice" />
+                </div>
+              </div>
+              <div class="S1Ccrwd" data-aos="fade-up" data-aos-delay="100">
+                <div class="S1Cprwd">
+                  <div class="S1CPitemRWD">
+                    <div class="ICONIMGrwd">
+                      <img src="images/XrWFHJC.png" alt="平面繪圖" />
+                    </div>
+                    <p class="SCPrwd">平面繪圖</p>
+                  </div>
+                </div>
+                <div class="LVICONrwd">
+                  <div class="GOODICON2rwd">
+                    <img src="images/Y0OBFm5.png" alt="nice" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="S2rwd">
+            <div class="S1Trwd">
+              <div class="S1TPrwd" data-aos="fade-in" data-aos-delay="100">
+                <div class="STPWrwd"><p>其他</p></div>
+                <div class="STPBrwd"><p>其他</p></div>
+              </div>
+            </div>
+            <div class="S1Ccrwd" data-aos="fade-up" data-aos-delay="100">
+              <div class="S1Cprwd">
+                <div class="S1CPitemRWD">
+                  <div class="ICONIMGrwd">
+                    <img src="images/zAZo4Fs.png" alt="英文能力icon" />
+                  </div>
+                  <p class="SCPrwd">英文</p>
+                </div>
+              </div>
+              <div class="LVICONrwd">
+                <p>閱讀</p>
+                <div class="GOODICONrwd">
+                  <img src="images/Y0OBFm5.png" alt="nice" />
+                </div>
+              </div>
+            </div>
+            <div class="S1Ccrwd" data-aos="fade-up" data-aos-delay="100">
+              <div class="S1Cprwd">
+                <div class="S1CPitemRWD">
+                  <div class="ICONIMGrwd">
+                    <img src="images/d8VmJas.png" alt="機車駕照icon" />
+                  </div>
+                  <p class="SCPrwd LWORDrwd">普通重型機車駕照</p>
+                </div>
+              </div>
+              <div class="OKICONrwd">
+                <img src="images/Y0OBFm5.png" alt="nice" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="Lbtna BtnA">
+          <a class="menuLINK" href="#WORK"></a>
+          <p class="BtnP WP">MY WORK</p>
+          <div class="strikethrough">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </section>
+      <section id="WORK">
+        <div class="Wbg">
+          <div class="WbgTop"></div>
+        </div>
+        <div class="Wcontents">
+          <div class="w1">
+            <a
+              class="work1A"
+              href="images/photoig.png"
+              data-aos="fade-in"
+              data-aos-delay="100"
+              data-fancybox="group1"
+              data-caption="攝影作品"
+            >
+              <div class="Wimg">
+                <img src="images/photoig.png" alt="作品預覽圖" />
+              </div>
+              <div class="Wmask"></div>
+            </a>
+            <a data-fancybox="group1" href="images/1p.jpeg"></a>
+            <a data-fancybox="group1" href="images/2p.png"></a>
+            <a data-fancybox="group1" href="images/3p.jpeg"></a>
+            <a data-fancybox="group1" href="images/4p.png"></a>
+            <a
+              data-fancybox="group1"
+              href="images/5p.png"
+              data-caption="更多攝影作品可到IG觀看"
+            ></a>
+            <div class="WTP WTPp1" data-aos="fade-up" data-aos-delay="100">
+              <div class="Wtpb">
+                <p>PHOTOT</p>
+              </div>
+              <div class="Wtpw">
+                <p>PHOTO</p>
+              </div>
+            </div>
+            <div class="Wcp">
+              <div class="Wcpc WcpcR" data-aos="fade-up" data-aos-delay="300">
+                <p class="Wcpp1">攝影<br />個人攝影作品</p>
+                <div class="Wcpdate">
+                  <a
+                    class="Wcpp2"
+                    href="https://www.instagram.com/ljx930/"
+                    target="_blank"
+                    >前往觀看</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w2">
+            <a
+              class="work2A"
+              href="images/youtube.jpg"
+              data-aos="fade-in"
+              data-aos-delay="100"
+              data-fancybox="gallery"
+              data-caption="生活紀錄"
+            >
+              <div class="Wimg">
+                <img src="images/youtube.jpg" alt="預覽圖" />
+              </div>
+              <div class="Wmask"></div>
+            </a>
+            <div class="WTP WTPp2" data-aos="fade-up" data-aos-delay="100">
+              <div class="Wtpb">
+                <p>YouTube</p>
+              </div>
+              <div class="Wtpw">
+                <p>YouTube</p>
+              </div>
+            </div>
+            <div class="Wcp">
+              <div class="Wcpc WcpcL" data-aos="fade-up" data-aos-delay="300">
+                <p class="Wcpp1">
+                  YouTube <br />
+                  生活紀錄
+                </p>
+                <a
+                  class="Wcpp2"
+                  href="https://www.youtube.com/c/%E5%BB%96%E5%AE%B6%E6%AD%860930"
+                  target="_blank"
+                  >前往觀看</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="w3">
+            <a
+              class="work3A"
+              href="images/fjumt.jpg"
+              data-aos="fade-in"
+              data-aos-delay="100"
+              data-fancybox="group3"
+              data-caption="登山社logo設計"
+            >
+              <div class="Wimg">
+                <img src="images/fjumt.jpg" alt="預覽圖" />
+              </div>
+              <div class="Wmask"></div>
+            </a>
+            <a
+              data-fancybox="group3"
+              href="images/mongolia_logo.jpg"
+              data-caption="蒙古志工logo設計"
+            ></a>
+            <a
+              data-fancybox="group3"
+              href="images/pbsc.jpg"
+              data-caption="繪本社logo設計1"
+            ></a>
+            <a
+              data-fancybox="group3"
+              href="images/pbsclogo.png"
+              data-caption="繪本社logo設計2"
+            ></a>
+            <a
+              data-fancybox="group3"
+              href="images/繪本社banner設計.png"
+              data-caption="繪本社banner設計"
+            ></a>
+            <a
+              data-fancybox="group3"
+              href="images/繪本社營隊logo設計.png"
+              data-caption="繪本社營隊logo設計"
+            ></a>
+            <a
+              data-fancybox="group3"
+              href="images/繪本社傳單設計.jpeg"
+              data-caption="繪本社傳單設計"
+            ></a>
+            <a
+              data-fancybox="group3"
+              href="images/農學市集傳單設計.png"
+              data-caption="農學市集傳單設計"
+            ></a>
+            <a
+              data-fancybox="group3"
+              href="images/mongolia_post.jpg"
+              data-caption="蒙古志工宣傳圖"
+            ></a>
+            <a
+              data-fancybox="group3"
+              href="images/閂山鈴鳴山宣傳圖.png"
+              data-caption="閂山鈴鳴山宣傳圖"
+            ></a>
+            <a
+              data-fancybox="group3"
+              href="images/高島縱走宣傳圖.jpeg"
+              data-caption="高島縱走宣傳圖"
+            ></a>
+            <a
+              data-fancybox="group3"
+              href="images/戒茂斯上嘉明湖宣傳圖.jpeg"
+              data-caption="戒茂斯上嘉明湖宣傳圖"
+            ></a>
+            <a
+              data-fancybox="group3"
+              href="images/登山醫學.png"
+              data-caption="登山醫療宣傳圖"
+            ></a>
+            <a
+              data-fancybox="group3"
+              href="images/登山糧食.jpeg"
+              data-caption="登山糧食宣傳圖"
+            ></a>
+            <a
+              data-fancybox="group3"
+              href="images/mongolia_first.jpg"
+              data-caption="蒙古志工社服設計"
+            ></a>
+            <a
+              data-fancybox="group3"
+              href="images/dysnc.png"
+              data-caption="東眼山環教團隊"
+            ></a>
+            <a
+              data-fancybox="group3"
+              href="images/taiwan.png"
+              data-caption="徒步環島掛布設計"
+            ></a>
+            <div class="WTP WTPp3" data-aos="fade-up" data-aos-delay="100">
+              <div class="Wtpb">
+                <p>活動設計</p>
+              </div>
+              <div class="Wtpw">
+                <p>活動設計</p>
+              </div>
+            </div>
+            <div class="Wcp">
+              <div class="Wcpc WcpcR" data-aos="fade-up" data-aos-delay="300">
+                <p class="Wcpp1">活動設計圖</p>
+                <p class="Wcpp2">點圖觀看</p>
+              </div>
+            </div>
+          </div>
+          <div class="w4">
+            <a
+              class="work4A"
+              href="images/ICUNIS_view.png"
+              data-aos="fade-in"
+              data-aos-delay="100"
+              data-fancybox="group4"
+              data-caption="ICUNIS_UI設計"
+            >
+              <div class="Wimg">
+                <img src="images/ICUNIS_view.png" alt="預覽圖" />
+              </div>
+              <div class="Wmask"></div>
+            </a>
+            <a
+              data-fancybox="group4"
+              href="images/ICUNIS_view2.png"
+              data-caption="ICUNIS_UI設計"
+            ></a>
+            <a
+              data-fancybox="group4"
+              href="images/project_31.jpgg"
+              data-caption="大三專題-醫院評量系統"
+            ></a>
+            <a
+              data-fancybox="group4"
+              href="images/project_net.jpg"
+              data-caption="大三專題-醫院好評網"
+            ></a>
+            <a
+              data-fancybox="group4"
+              href="images/project_APP.jpg"
+              data-caption="期末裝置行動報告"
+            ></a>
+            <a
+              data-fancybox="group4"
+              href="images/project_view.jpg"
+              data-caption="大三專題-醫院評量系統_UI設計"
+            ></a>
+            <a
+              data-fancybox="group4"
+              href="images/project_view.jpg"
+              data-caption="大四實習-虛擬健保卡報到系統"
+            ></a>
+            <a
+              data-fancybox="group4"
+              href="images/notonlyacouch.png"
+              data-caption="輔大苗圃工作坊【宅運動x通用設計】"
+            ></a>
+            <div class="WTP WTPp4" data-aos="fade-up" data-aos-delay="100">
+              <div class="Wtpb">
+                <p>專題設計</p>
+              </div>
+              <div class="Wtpw">
+                <p>專題設計</p>
+              </div>
+            </div>
+            <div class="Wcp">
+              <div class="Wcpc WcpcL" data-aos="fade-up" data-aos-delay="300">
+                <p class="Wcpp1">專題設計</p>
+                <p class="Wcpp2">點圖觀看</p>
+              </div>
+            </div>
+          </div>
+          <div class="w5">
+            <a
+              class="work5A"
+              href="images/徒步環島.jpg"
+              data-aos="fade-in"
+              data-aos-delay="100"
+              data-fancybox="group5"
+              data-caption="2023徒步環島"
+            >
+              <div class="Wimg">
+                <img src="images/徒步環島.jpg" alt="預覽圖" />
+              </div>
+              <div class="Wmask"></div>
+            </a>
+            <a
+              data-fancybox="group5"
+              href="images/熊野古道(中邊路).jpg"
+              data-caption="2023熊野古道(中邊路)-日本朝聖之路"
+            ></a>
+            <a
+              data-fancybox="group5"
+              href="images/formosatrail40K .jpg"
+              data-caption="2024Formosa Trail-40K"
+            ></a>
+            <a
+              data-fancybox="group5"
+              href="images/2024蒙古團志工.jpg"
+              data-caption="2024蒙古團志工"
+            ></a>
+            <a
+              data-fancybox="group5"
+              href="images/ACT.jpg"
+              data-caption="2025-ACT"
+            ></a>
+            <a
+              data-fancybox="group5"
+              href="images/橘子遊戲由岸到頂潮你的冒險去-山海圳.jpg"
+              data-caption="2022橘子遊戲由岸到頂潮你的冒險去-山海圳"
+            ></a>
+            <a
+              data-fancybox="group5"
+              href="images/舉辦教育部資安人培計畫子4活動.jpg"
+              data-caption="2024舉辦教育部資安人培計畫子4活動"
+            ></a>
+            <a
+              data-fancybox="group5"
+              href="images/繪本社邀講師.jpg"
+              data-caption="2021繪本社邀請TFT豆皮(鄒宗翰)講師"
+            ></a>
+            <a
+              data-fancybox="group5"
+              href="images/2024Uniservitate大使.jpg"
+              data-caption="2024Uniservitate大使"
+            ></a>
+            <a
+              data-fancybox="group5"
+              href="images/2025世壯運選手合照.jpg"
+              data-caption="2025世壯運選手要與我們合照"
+            ></a>
+            <a
+              data-fancybox="group5"
+              href="images/2025世壯運田徑ATPT合照.jpg"
+              data-caption="2025世壯運田徑AT/PT合照"
+            ></a>
+            <a
+              data-fancybox="group5"
+              href="images/與東眼山環教師和護管員合照.jpg"
+              data-caption="2022與東眼山環教師和護管員合照"
+            ></a>
+            <a
+              data-fancybox="group5"
+              href="images/東眼山暑期營隊合照.jpg"
+              data-caption="2022東眼山暑期營隊合照"
+            ></a>
+            <a
+              data-fancybox="group5"
+              href="images/繪本社暑期營隊合照.jpg"
+              data-caption="2020繪本社暑期營隊合照"
+            ></a>
+            <a
+              data-fancybox="group5"
+              href="images/2022輔大山社嚮導幹部大聚會.jpg"
+              data-caption="2022輔大山社嚮導幹部大聚會"
+            ></a>
+            <a
+              data-fancybox="group5"
+              href="images/農學市集畢業合照.jpg"
+              data-caption="農學市集畢業合照"
+            ></a>
+            <a
+              data-fancybox="group5"
+              href="images/繪本社畢業合照.jpg"
+              data-caption="繪本社畢業合照"
+            ></a>
+            <a
+              data-fancybox="group5"
+              href="images/聯新醫院實習部門合照合照.jpg"
+              data-caption="聯新醫院實習部門合照"
+            ></a>
+            <a
+              data-fancybox="group5"
+              href="images/2023萬金石馬拉松.jpg"
+              data-caption="2023第一次跑全馬-萬金石馬拉松"
+            ></a>
+            <a
+              data-fancybox="group5"
+              href="images/2024田中馬拉松全馬.jpg"
+              data-caption="2024田中馬拉松全馬"
+            ></a>
+            <div class="WTP WTPp5" data-aos="fade-up" data-aos-delay="100">
+              <div class="Wtpb">
+                <p>重要經歷</p>
+              </div>
+              <div class="Wtpw">
+                <p>重要經歷</p>
+              </div>
+            </div>
+            <div class="Wcp">
+              <div class="Wcpc WcpcR" data-aos="fade-up" data-aos-delay="300">
+                <p class="Wcpp1">重要經歷照片</p>
+                <p class="Wcpp2">點圖觀看</p>
+                <div class="Wcpdate"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="RbtnRE">
+          <div class="Rbtna BtnA">
+            <a class="menuLINK" href="#CONTACT"></a>
+            <p class="BtnP BP">CONTACT ME</p>
+            <div class="strikethrough">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="CONTACT">
+        <div class="CbgTop"></div>
+        <div class="Ccontents">
+          <div class="C1" data-aos="fade-right" data-aos-delay="100">
+            <div class="underline c1UL">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="C1c">
+              <ul class="C1c-icon">
+                <li class="Cicon1">
+                  <a title="連絡電話"
+                    ><img src="images/C_phone.svg" alt="連絡電話"
+                  /></a>
+                  <div class="CiconEX">
+                    <p>▼<br />0902-290-930</p>
+                  </div>
+                </li>
+                <li class="Cicon2">
+                  <a
+                    href="https://line.me/ti/p/exwiAIGUFK"
+                    target="_blank"
+                    title="我的line QRcode"
+                    ><img src="images/C_line.svg" alt="我的line QRcode"
+                  /></a>
+                </li>
+                <li class="Cicon3">
+                  <a title="連絡信箱"
+                    ><img src="images/C_mail.svg" alt="連絡信箱"
+                  /></a>
+                  <div class="CiconEX">
+                    <p>▼<br />batty890930@gmail.com</p>
+                  </div>
+                </li>
+              </ul>
+              <div class="C1p"><p>CONTACT ME</p></div>
+            </div>
+          </div>
+          <div class="C2" data-aos="fade-left" data-aos-delay="100">
+            <div class="underline c1UL">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="C2c">
+              <ul class="C2c-icon">
+                <li class="Cicon4">
+                  <a
+                    href="https://www.instagram.com/ljx930/"
+                    target="_blank"
+                    title="我的Instagram"
+                    ><img src="images/C_ig.svg" alt="我的Instagram"
+                  /></a>
+                </li>
+                <li class="Cicon5">
+                  <a
+                    href="https://www.facebook.com/liao930/"
+                    target="_blank"
+                    title="我的FB"
+                    ><img src="images/C_fb.svg" alt="我的FB"
+                  /></a>
+                </li>
+              </ul>
+              <div class="C2p"><p>FOLLOW ME</p></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div id="GoTop">
+        <a href="#"><img src="images/top.png" alt="go to top" /></a>
+      </div>
     </main>
     <footer>
-        <div><span></span></div>
-        <div><p>Nice to meet you~</p></div>
+      <div><span></span></div>
+      <div><p>Nice to meet you~</p></div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
     <!-- fancybox js -->
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <!-- AOS js -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init({
-            offset: 200,
-            anchorPlacement:'top-top',
-            easing: 'ease-out-back',
-            once: true,
-            duration: 1000
-        });
+      AOS.init({
+        offset: 200,
+        anchorPlacement: "top-top",
+        easing: "ease-out-back",
+        once: true,
+        duration: 1000,
+      });
     </script>
     <!-- 自訂js -->
     <script>
-        $(function(){
-            //menu、icon連結
-            $('.menuLINK, .iconLINK').click(function(event){
-                event.preventDefault();
-                var btn = $(this).attr('href');
-                var pos = $(btn).offset();
-                $('html,body').animate({scrollTop:pos.top},1000);
-            });
-            //選單自動收合
-            $('.menu').click(function(){
-                $('.ham').click();
-            });
-            //gotop
-            $('#GoTop').click(function(event){
-                event.preventDefault();
-                var btn = $(this).attr('href');
-                var pos = $(btn).offset();
-                $('html,body').stop().animate({scrollTop: 0},1000);
-            });
-            //gotop淡入淡出
-            $(window).scroll(function(){
-                if($(this).scrollTop() >500){
-                    $('#GoTop').stop().fadeTo('fast',.7);
-                }else{
-                    $('#GoTop').stop().fadeOut('fast');
-                }
-            });
+      $(function () {
+        //menu、icon連結
+        $(".menuLINK, .iconLINK").click(function (event) {
+          event.preventDefault();
+          var btn = $(this).attr("href");
+          var pos = $(btn).offset();
+          $("html,body").animate({ scrollTop: pos.top }, 1000);
         });
+        //選單自動收合
+        $(".menu").click(function () {
+          $(".ham").click();
+        });
+        //gotop
+        $("#GoTop").click(function (event) {
+          event.preventDefault();
+          var btn = $(this).attr("href");
+          var pos = $(btn).offset();
+          $("html,body").stop().animate({ scrollTop: 0 }, 1000);
+        });
+        //gotop淡入淡出
+        $(window).scroll(function () {
+          if ($(this).scrollTop() > 500) {
+            $("#GoTop").stop().fadeTo("fast", 0.7);
+          } else {
+            $("#GoTop").stop().fadeOut("fast");
+          }
+        });
+      });
     </script>
-</body>
+  </body>
 </html>
